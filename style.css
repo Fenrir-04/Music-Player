@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 48px;
+    padding: 0 8px;
+
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 32px;
+    background-image: url('bg1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.songItem{
+    height: 25px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.songItem img{
+    width: 26px;
+    margin: 0 23px;
+    border-radius: 20px;
+}
+
+.songItemContainer{
+    margin-top: 34px;
+}
+
+.timeStamp{
+    margin: 0 13px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    font-family: "Varela Round", sans-serif;
+}
+
+/* Media queries for various breakpoints */
+
+/* For screens smaller than 576px */
+@media (max-width: 575px) {
+    .container {
+        width: 90%;
+        padding: 16px;
+    }
+
+    .brand {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        padding: 0 8px;
+    }
+
+    .songInfo {
+        left: 5vw;
+    }
+}
+
+/* For screens between 576px and 767px */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .container {
+    width: 80%;
+    }
+    
+    .songInfo {
+    left: 8vw;
+    }
+    
+    .songItem {
+    height: 30px;
+    }
+    
+    .songItem img {
+    width: 30px;
+    margin: 0 15px;
+    }
+    
+    .timeStamp {
+    margin: 0 10px;
+    }
+    
+    .timeStamp i {
+    font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+    flex-direction: column;
+    width: 90%;
+    margin: 23px auto;
+    padding: 16px;
+    }
+    
+    .songItemContainer {
+    margin-top: 16px;
+    }
+    
+    .songItem img {
+    width: 20px;
+    margin: 0 8px;
+    border-radius: 50%;
+    }
+    
+    .songItem p {
+    font-size: 0.8rem;
+    }
+    
+    .songInfo {
+    position: static;
+    margin-top: 16px;
+    text-align: center;
+    }
+    
+    .songInfo img {
+    opacity: 1;
+    margin-top: 8px;
+    }
+    
+    .bottom {
+    height: auto;
+    padding: 16px;
+    }
+    
+    #myProgressBar {
+    width: 90%;
+    }
+    
+    .brand img {
+    width: 36px;
+    padding: 0;
+    }
+    
+    .brand {
+    font-size: 1rem;
+    }
+    
+    nav ul li {
+    padding: 0 6px;
+    }
+    }
+    
+    @media (max-width: 576px) {
+    .container {
+    width: 100%;
+    margin: 8px auto;
+    padding: 8px;
+    }
+    
+    .brand {
+    font-size: 0.8rem;
+    }
+    
+    .brand img {
+    width: 30px;
+    }
+    
+    nav ul li {
+    padding: 0 4px;
+    }
+    
+    .songItemContainer {
+    margin-top: 12px;
+    }
+    
+    .songItem img {
+    width: 16px;
+    margin: 0 4px;
+    }
+    
+    .songItem p {
+    font-size: 0.7rem;
+    }
+    
+    .bottom {
+    height: auto;
+    padding: 8px;
+    font-size: 0.8rem;
+    }
+    
+    #myProgressBar {
+    width: 100%;
+    }
+    
+    .icons {
+    margin-top: 8px;
+    }
+    
+    .icons i {
+    font-size: 1.2rem;
+    }
+    
+    .timeStamp i {
+    font-size: 0.8rem;
+    }
+    }
+    
+    
+    
+    
+    
